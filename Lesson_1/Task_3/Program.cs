@@ -1,19 +1,20 @@
 ﻿int[] nums = new int[10];
-
+List<int> nums2 = new List<int>();
 for (int i = 0;i < nums.Length; i++)
 {
     Console.Write($"Enter {i+1} number: ");
     int buffer = int.Parse(Console.ReadLine());
     nums[i] = buffer;
-    
+    nums2.Add(buffer);
+    nums2.Add(buffer);
 }
-Console.Write("Your list - ");
-for (int j = 0; j < nums.Length; j++)
+Console.Write("List you got: ");
+foreach(int i in nums)
 {
-    Console.Write(nums[j]+" ");
+    Console.Write(i+ " ");
 }
-Console.Write("\nList that is requared - ");
-for (int k = 0; k < nums.Length; k++)
+Console.Write("\nList is requared: ");
+foreach(int i in nums2)
 {
-    Console.Write(nums[k]+ " " + nums[k]+" ");
+    Console.Write(i + " ");
 }

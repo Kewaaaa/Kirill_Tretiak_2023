@@ -7,7 +7,8 @@ if (string1.Length > string2.Length)
 {
     string result = string1 + string2;
     Console.WriteLine(result);
-}else if (string1.Length < string2.Length)
+}
+else if (string1.Length < string2.Length)
 {
     string[] result = string1.Split(string2[0]);
     for (int i = 0; i < result.Length; i++)
