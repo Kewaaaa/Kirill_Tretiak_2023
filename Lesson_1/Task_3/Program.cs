@@ -1,20 +1,20 @@
 ﻿int[] nums = new int[10];
-List<int> nums2 = new List<int>();
-for (int i = 0;i < nums.Length; i++)
+int[] dublicates = new int[20];
+int index = 0;
+for (int i = 0; i < nums.Length; i++)
 {
-    Console.Write($"Enter {i+1} number: ");
+    Console.Write($"Enter {i + 1} number: ");
     int buffer = int.Parse(Console.ReadLine());
     nums[i] = buffer;
-    nums2.Add(buffer);
-    nums2.Add(buffer);
+    dublicates[index] = nums[i];
+    dublicates[index + 1] = nums[i];
+    index+=2;
+    
 }
-Console.Write("List you got: ");
-foreach(int i in nums)
+
+
+Console.Write("List is requared: ");
+foreach(int i in dublicates)
 {
-    Console.Write(i+ " ");
-}
-Console.Write("\nList is requared: ");
-foreach(int i in nums2)
-{
-    Console.Write(i + " ");
+    Console.Write(i+" ");
 }
