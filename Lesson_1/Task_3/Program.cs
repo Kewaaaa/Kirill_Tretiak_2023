@@ -16,11 +16,12 @@ Console.Write("\nSelect the number you want to dublicate: ");
 int selectedNum = int.Parse(Console.ReadLine());
 for (int i = 0;i < nums.Length; i++)
 {
+    dublicate.Add(nums[i]);
     if (nums[i] == selectedNum)
     {
         dublicate.Add(selectedNum);
     }
-    dublicate.Add(nums[i]);
+    
 }
 foreach(int i in dublicate)
 {
